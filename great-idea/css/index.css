@@ -76,8 +76,8 @@ nav {
 	width: 100%; 
 	margin: auto;
 	top: auto; 
-	padding: 10px 0px 10px 0px;
-	background-color: dodgerblue;   
+	padding: 2.5% 0% 2.5% 0%; 
+	/* background-color: dodgerblue;    */
 }
 
 .nav {
@@ -91,7 +91,16 @@ nav {
 	/* border: 1px solid blue;  */
 	padding: 10px;
 	padding-left: 0px; 
-	flex-grow: 1;   
+	flex-grow: 1;
+	color: gray;    
+}
+
+.nav li a:hover {
+	color: dodgerblue; 
+}
+
+.nav a {
+	padding: 0% 0% 0% 0%; 
 }
 
 .logo {
@@ -102,11 +111,10 @@ nav {
 	padding: 0% 0% 0% 0%; 
 	display: flex;
 	justify-content: space-between;
-	background-color: green; 
 }
 
 .cta-box {
-	border: 1px solid red; 
+	/* border: 1px solid red;  */
 	width: 48%;
 	margin: auto; 
 	text-align: center; 
@@ -114,16 +122,31 @@ nav {
 }
 
 .cta {
-	border: 1px solid red; 
+	/* border: 1px solid red;  */
 	margin: auto
 }
 
 .cta h1 {
-	font-size: 5em; 
+	font-size: 5em;
+}
+
+.cta-button {
+	border: 1px solid grey;
+	background-color: white; 
+	border-radius: 2px;
+	width: 36%;
+	padding: 2%; 
+}
+
+.cta-button:hover {
+	color: white;
+	background-color: dodgerblue; 
+	border: 1px solid gray;
+
 }
 
 .splash-img { 
-	border: 1px solid red; 
+	/* border: 1px solid red;  */
 	width: 48%;
 	height: auto;
 	padding: 4% 0% 4% 4%; 
@@ -134,32 +157,37 @@ nav {
 	/* border: 1px solid red; */
 	display: flex; 
 	justify-content: space-between; 
+	padding: 2% 0% 2% 0; 
 }
 
 .f-top {
-	padding: 5px; 
+	padding: 0.5%; 
 }
 
 .f-bottom {
-	padding: 5px; 
+	padding: 0.5%; 
 }
 
 .middle-img {
 	width: 100%; 
 }
 
+address {
+	margin-top: 3%; 
+}
+
 address, a {
 	display: flex; 
 	flex-direction: column; 
 	text-decoration: none; 
-	padding: 5px 0px 5px 0px; 
+	padding: 1% 0% 1% 0%; 
 	color: black; 
 }
 
 footer {
 	text-align: center; 
-	margin: 50px; 
-	border: 1px solid blue; 
+	margin: 5%; 
+	/* border: 1px solid blue;  */
 }
 
 
@@ -173,6 +201,10 @@ footer {
 	margin: 3% 0% 3% 0%;
 }
 
+.service h1 {
+	font-size: 1.5em; 
+}
+
 .service-container {
 	display: flex; 
 	justify-content: space-between; 
@@ -182,10 +214,27 @@ footer {
 
 .service-box {
 	border: 1px solid black;
-	margin: 2% 0% 2% 0%;    
-	max-width: 48%;
+	margin: 1.5% 0% 1.5% 0%;    
+	max-width: 48.5%;
 	padding: 2%;  
+	background-color: rgb(241, 240, 240); 
 }
+
+.service-box button {
+	margin: 4% 0% 2% 0%; 
+	background-color: white;
+	width: 35%;
+	height: 20%;
+	border: 1px solid black;
+	border-radius: 3px;
+}
+
+.service-box button:hover {
+	background-color: dodgerblue;
+	color: white;
+	border: 1px solid white;
+}
+
 
 .service-footer {
 	display: flex; 
@@ -210,3 +259,4 @@ ul.b {
 	list-style-type: square;
 	padding-left: 6%; 
 }
+
