@@ -66,30 +66,30 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 body {
-	border: 1px solid red; 
+	border: 1px dotted red;; 
 	width: 85%;
 	margin: auto;
 }
 
 nav {
 	border: 1px solid red; 
-	width: 85%; 
+	width: 100%; 
 	margin: auto;
-	top: 0; 
-	position: fixed; 
+	top: auto; 
+
 	padding: 10px 0px 10px 0px;
 	background-color: dodgerblue;   
 }
 
 .nav {
-	border: 1px solid blue; 
+	/* border: 1px solid blue;  */
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;   
 }
 
 .nav li {
-	border: 1px solid blue; 
+	/* border: 1px solid blue;  */
 	padding: 10px;
 	padding-left: 0px; 
 	flex-grow: 1;   
@@ -98,5 +98,29 @@ nav {
 .logo {
 	margin-left: 5%;
 }
+
+.splash {
+	padding: 0% 0% 0% 0%; 
+	display: flex;
+
+	justify-content: space-evenly;
+	background-color: green; 
+}
+
+.cta-box {
+	flex-basis: 49.5%;
+	text-align: center; 
+	vertical-align: middle
+}
+
+.cta {
+	padding-top: 30%; 
+}
+
+.cta-box-image {
+
+}
+
+
 
 
