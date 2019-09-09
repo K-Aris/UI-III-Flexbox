@@ -102,7 +102,6 @@ nav {
 .splash {
 	padding: 0% 0% 0% 0%; 
 	display: flex;
-
 	justify-content: space-evenly;
 	background-color: green; 
 }
@@ -117,10 +116,37 @@ nav {
 	padding-top: 30%; 
 }
 
-.cta-box-image {
-
+.cta-box-img { 
+	width: auto; 
+	height: auto; 
 }
 
 
+.feature {
+	border: 1px solid red;
+	display: flex; 
+	justify-content: space-between; 
+}
 
+.f-top {
+	padding: 5px; 
+}
 
+.f-bottom {
+	padding: 5px; 
+}
+
+.middle-img {
+	width: 100%; 
+}
+
+address, a {
+	display: flex; 
+	flex-direction: column; 
+	text-decoration: none; 
+	padding: 5px 0px 5px 0px; 
+}
+
+footer {
+	text-align: center; 
+}
