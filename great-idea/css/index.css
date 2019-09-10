@@ -270,3 +270,52 @@ button {
 	transition-duration: 0.5s;
 	transition-timing-function: ease-out;
 }
+
+
+/* About US */
+
+.team-header-img {
+		width: 100%;
+}
+
+.about-us {
+	margin: 3% 0% 3% 0%;
+}
+
+.about-us h1 {
+	font-size: 3em;
+}
+
+.meet-us {
+	width: 100%; 
+}
+
+.c-suite {
+	display: flex;
+	padding: 3%; 
+}
+
+.c-suite h1 {
+	font-size: 2em; 
+}
+
+.c-suite h2 {
+	font-size: 1.5em; 
+	color: dodgerblue; 
+}
+
+.person {
+	width: 50%; 
+}
+
+.person img {
+	width: 100%; 
+	border-radius: 50%; 
+}
+
+.about {
+	width: 100%; 
+	padding: 9% 3% 3% 6%; 
+}
+
+
