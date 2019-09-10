@@ -255,8 +255,18 @@ footer {
 }
 
 
+
+
 ul.b {
 	list-style-type: square;
 	padding-left: 6%; 
 }
 
+
+/* Annimation */
+
+button {
+	transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-out;
+}
