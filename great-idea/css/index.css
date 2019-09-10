@@ -227,12 +227,14 @@ footer {
 	height: 20%;
 	border: 1px solid black;
 	border-radius: 3px;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .service-box button:hover {
 	background-color: dodgerblue;
 	color: white;
 	border: 1px solid white;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -318,4 +320,107 @@ button {
 	padding: 9% 3% 3% 6%; 
 }
 
+.mobile-logo {
+	display: none;  
+}
 
+
+@media only screen and (max-width: 600px) {
+	body {
+		background-color: whitesmoke; 
+	}
+
+	.nav {
+		flex-direction: column;
+		max-width: 100%;
+	}
+
+	.nav li {
+		align-self: center;
+	}
+
+	.logo {
+		display: none; 
+	}
+
+	.service-header-img {
+		display: none;
+	}
+
+	.services-info-img {
+		display: none; 
+	}
+
+	.service-container {
+		display: flex;
+		flex-direction: column; 
+	}
+
+	.service-box {
+		max-width: 100%;
+		display: flex; 
+		flex-direction: column;
+		border-radius: 5px;  
+		background-color: aliceblue; 
+	}
+
+	.service-box button {
+		align-self: center; 
+		height: 40px; 
+	}
+
+	.service-footer-left {
+		max-width: 100%;  
+	}
+
+	.team-img {
+		display: none; 
+	}
+
+	.c-suite {
+		flex-direction: column; 
+		align-items: center; 
+	}
+
+	.c-suite {
+		border: 1px outset grey; 
+		border-radius: 10px; 
+		margin: 5% 0% 5% 0%;
+		box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+		background-color: aliceblue; 
+	}
+
+	.splash-img {
+		display: none; 
+	}
+
+	.cta h1 {
+		max-width: 100%; 
+		font-size: 3em; 
+		margin-top: 20%; 
+		
+	}
+
+	.feature { 
+		display: none; 
+	}
+
+	hr {
+		display: none; 
+	}
+	
+	.mobile-logo {
+		display: inline-block;
+		width: 50%;
+		height: auto; 
+		margin-left: 28%;   
+	}
+
+	address {
+		display: none; 
+	}
+
+	footer {
+		margin-top: 50%; 
+	}
+}
