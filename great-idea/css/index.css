@@ -139,10 +139,12 @@ nav {
 }
 
 .cta-button:hover {
-	color: white;
 	background-color: dodgerblue; 
 	border: 1px solid gray;
+}
 
+.cta-button a:hover {
+	color: white; 
 }
 
 .splash-img { 
@@ -253,7 +255,7 @@ footer {
 
 .services-info-img {
 	width: 49%;
-	height: auto; 
+	height: 49%; 
 }
 
 
@@ -325,7 +327,7 @@ button {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 	body {
 		background-color: whitesmoke; 
 	}
@@ -360,13 +362,16 @@ button {
 		max-width: 100%;
 		display: flex; 
 		flex-direction: column;
-		border-radius: 5px;  
-		background-color: aliceblue; 
+		border-radius: 10px; 
+		box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+		background-color: aliceblue;
 	}
 
 	.service-box button {
 		align-self: center; 
-		height: 40px; 
+		height: 40px;
+		border-radius: 20px;
+		border-color: white; 
 	}
 
 	.service-footer-left {
@@ -377,6 +382,9 @@ button {
 		display: none; 
 	}
 
+	.meet-us {
+		margin: 12% 0% 12% 0%; 
+	}
 	.c-suite {
 		flex-direction: column; 
 		align-items: center; 
@@ -401,6 +409,19 @@ button {
 		
 	}
 
+	.cta-button {
+		font-size: 1em; 
+		width: 60%;
+	}
+
+	.cta-button:hover {
+		background-color: dodgerblue;
+	}
+
+	.cta-button a:hover {
+		color: white; 
+	}
+
 	.feature { 
 		display: none; 
 	}
@@ -411,10 +432,25 @@ button {
 	
 	.mobile-logo {
 		display: inline-block;
-		width: 50%;
+		width: 30%;
 		height: auto; 
-		margin-left: 28%;   
+		margin-left: 35%;   
 	}
+
+	.nav li {
+		padding: 5%;
+		margin: 1%;  
+	}
+
+	.nav li:hover {
+		background: dodgerblue;
+		border-radius: 5px;  
+	}
+
+	.nav li a:hover {
+		color: white; 
+	}
+	
 
 	address {
 		display: none; 
