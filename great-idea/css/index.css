@@ -107,6 +107,10 @@ nav {
 	margin-left: 5%;
 }
 
+.collapse-nav {
+	display: none; 
+}
+
 .cta-container {
 	padding: 0% 0% 0% 0%; 
 	display: flex;
@@ -431,13 +435,6 @@ button {
 		display: none; 
 	}
 	
-	.mobile-logo {
-		display: inline-block;
-		width: 30%;
-		height: auto; 
-		margin-left: 35%;   
-	}
-
 	.nav li {
 		padding: 5%;
 		margin: 1%;  
@@ -460,4 +457,39 @@ button {
 	footer {
 		margin-top: 50%; 
 	}
+
+/* COLLAPSE NAV!!!! Start */
+	.collapse-nav {
+		display: block; 
+	}
+
+	.checkbox {
+		display: inline-block;
+	}
+
+	.mobile-logo {
+		display: inline-block;
+	}
+
+	.collapse-nav-list {
+		border: 1px solid red;
+		text-align: center; 
+		padding: 2%; 
+		max-height: 0;
+		overflow: hidden;
+	}
+	
+	input:checked ~ .collapse-nav-list {
+		max-height: 100%;
+	}
+
+	.collapse-nav-list a {
+		margin: 5% 0% 5% 0%; 
+	
+	}
+
+	nav {
+		display: none; 
+	}
+
 }
