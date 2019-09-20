@@ -64,3 +64,463 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
+body {
+	width: 85%;
+	margin: auto;
+}
+
+nav {
+	/* border: 1px solid red;  */
+	width: 100%; 
+	margin: auto;
+	top: auto; 
+	padding: 2.5% 0% 2.5% 0%; 
+	/* background-color: dodgerblue;    */
+}
+
+.nav {
+	/* border: 1px solid blue;  */
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;   
+}
+
+.nav li {
+	/* border: 1px solid blue;  */
+	padding: 10px;
+	padding-left: 0px; 
+	flex-grow: 1;
+	color: gray;    
+}
+
+.nav li a:hover {
+	color: dodgerblue; 
+}
+
+.nav a {
+	padding: 0% 0% 0% 0%; 
+}
+
+.logo {
+	margin-left: 5%;
+}
+
+.collapse-nav {
+	display: none; 
+}
+
+.cta-container {
+	padding: 0% 0% 0% 0%; 
+	display: flex;
+	justify-content: space-between;
+}
+
+.cta-box {
+	/* border: 1px solid red;  */
+	width: 48%;
+	margin: auto; 
+	text-align: center; 
+	
+}
+
+.cta {
+	/* border: 1px solid red;  */
+	margin: auto
+}
+
+.cta h1 {
+	font-size: 5em;
+}
+
+.cta-button {
+	border: 1px solid grey;
+	background-color: white; 
+	border-radius: 2px;
+	width: 36%;
+	padding: 2%; 
+}
+
+.cta-button:hover {
+	background-color: dodgerblue; 
+	border: 1px solid gray;
+}
+
+.cta-button a:hover {
+	color: white; 
+}
+
+.splash-img { 
+	/* border: 1px solid red;  */
+	width: 48%;
+	height: auto;
+	padding: 4% 0% 4% 4%; 
+}
+
+
+.feature {
+	/* border: 1px solid red; */
+	display: flex; 
+	justify-content: space-between; 
+	padding: 2% 0% 2% 0; 
+}
+
+.f-top {
+	padding: 0.5%; 
+}
+
+.f-bottom {
+	padding: 0.5%; 
+}
+
+.middle-img {
+	width: 100%; 
+}
+
+address {
+	margin-top: 3%; 
+}
+
+address, a {
+	display: flex; 
+	flex-direction: column; 
+	text-decoration: none; 
+	padding: 1% 0% 1% 0%; 
+	color: black; 
+}
+
+footer {
+	text-align: center; 
+	margin: 5%; 
+	/* border: 1px solid blue;  */
+}
+
+
+/* Service Page */
+
+.service-header-img {
+	width: 100%; 
+}
+
+.service {
+	margin: 3% 0% 3% 0%;
+}
+
+.service h1 {
+	font-size: 1.5em; 
+}
+
+.service-container {
+	display: flex; 
+	justify-content: space-between; 
+	flex-wrap: wrap;
+	margin: 3% 0% 3% 0%;  
+}
+
+.service-box {
+	border: 1px solid black;
+	margin: 1.5% 0% 1.5% 0%;    
+	max-width: 48.5%;
+	padding: 2%;  
+	background-color: rgb(241, 240, 240); 
+}
+
+.service-box button {
+	margin: 4% 0% 2% 0%; 
+	background-color: white;
+	width: 35%;
+	height: 20%;
+	border: 1px solid black;
+	border-radius: 3px;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-box button:hover {
+	background-color: dodgerblue;
+	color: white;
+	border: 1px solid white;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.service-footer {
+	display: flex; 
+	justify-content: space-between;
+	width:100%;
+	height:auto;
+	margin-top: 3%;
+}
+
+.service-footer-left {
+	max-width: 49%; 
+	padding-right: 2%; 
+}
+
+.services-info-img {
+	width: 49%;
+	height: 49%; 
+}
+
+
+
+
+ul.b {
+	list-style-type: square;
+	padding-left: 6%; 
+}
+
+
+/* Annimation */
+
+button {
+	transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-out;
+}
+
+
+/* About US */
+
+.team-header-img {
+		width: 100%;
+}
+
+.about-us {
+	margin: 3% 0% 3% 0%;
+}
+
+.about-us h1 {
+	font-size: 3em;
+}
+
+.meet-us {
+	width: 100%; 
+}
+
+.c-suite {
+	display: flex;
+	padding: 3%; 
+}
+
+.c-suite h1 {
+	font-size: 2em; 
+}
+
+.c-suite h2 {
+	font-size: 1.5em; 
+	color: dodgerblue; 
+}
+
+.person {
+	width: 50%; 
+}
+
+.person img {
+	width: 100%; 
+	border-radius: 50%; 
+}
+
+.about {
+	width: 100%; 
+	padding: 9% 3% 3% 6%; 
+}
+
+.mobile-logo {
+	display: none;  
+}
+
+
+@media only screen and (max-width: 700px) {
+	body {
+		background-color: whitesmoke; 
+	}
+
+	.nav {
+		flex-direction: column;
+		max-width: 100%;
+	}
+
+	.nav li {
+		align-self: center;
+	}
+
+	.logo {
+		display: none; 
+	}
+
+	.service-header-img {
+		display: none;
+	}
+
+	.services-info-img {
+		display: none; 
+	}
+
+	.service-container {
+		display: flex;
+		flex-direction: column; 
+	}
+
+	.service-box {
+		max-width: 100%;
+		display: flex; 
+		flex-direction: column;
+		margin: 5% 0% 5% 0; 
+		border-radius: 10px; 
+		box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+		background-color: aliceblue;
+	}
+
+	.service-box button {
+		align-self: center; 
+		height: 40px;
+		border-radius: 5px;
+		border-color: white; 
+	}
+
+	.service-footer-left {
+		max-width: 100%;  
+	}
+
+	.team-img {
+		display: none; 
+	}
+
+	.meet-us {
+		margin: 12% 0% 12% 0%; 
+	}
+	.c-suite {
+		flex-direction: column; 
+		align-items: center; 
+	}
+
+	.c-suite {
+		border: 1px outset grey; 
+		border-radius: 10px; 
+		margin: 5% 0% 5% 0%;
+		box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+		background-color: aliceblue; 
+	}
+
+	.splash-img {
+		display: none; 
+	}
+
+	.cta h1 {
+		max-width: 100%; 
+		font-size: 3em; 
+		margin-top: 20%; 
+		
+	}
+
+	.cta-button {
+		font-size: 1em; 
+		width: 60%;
+	}
+
+	.cta-button:hover {
+		background-color: dodgerblue;
+	}
+
+	.cta-button a:hover {
+		color: white; 
+	}
+
+	.feature { 
+		display: none; 
+	}
+
+	hr {
+		display: none; 
+	}
+	
+	.nav li {
+		padding: 5%;
+		margin: 1%;  
+	}
+
+	.nav li:hover {
+		background: dodgerblue;
+		border-radius: 5px;  
+	}
+
+	.nav li a:hover {
+		color: white; 
+	}
+	
+
+	address {
+		display: none; 
+	}
+
+	footer {
+		margin-top: 50%; 
+	}
+
+/* COLLAPSE NAV!!!! Start */
+	.collapse-nav {
+		display: block;
+		width: 85%; 
+		position: fixed;
+		z-index: 1; 
+		top: 0; 
+		/* background-color: rgba(245, 245, 245, 0.336);  */
+	}
+
+	.checkbox {
+		display: inline-block;
+	}
+
+	.mobile-logo {
+		display: block;
+		height: 40px;
+		padding-left: 48%; 
+	}
+
+	.collapse-nav-list {
+		text-align: center;  
+		max-height: 0;
+		overflow: hidden;
+		width: 100%; 
+		background-color: rgba(72, 170, 226, 0.945);
+	}
+	
+	input:checked ~ .collapse-nav-list {
+		max-height: 100%;				
+	}
+
+	.collapse-nav-list a {
+		margin: 15% 0% 15% 0%; 
+		font-size: 2em;
+		padding: 10px;  
+		vertical-align: middle; 
+	}
+
+	.collapse-nav-list a:hover {
+		color: white; 
+	}
+
+	nav {
+		display: none; 
+	}
+
+	.collapse-nav label {
+		font-size: 50px; 
+		padding: 10px 0 10px 50px;
+	}
+
+	input#menu {
+		display: none;
+	}
+
+	.service {
+		z-index: -1;
+	}
+	
+	.static-nav-bar {
+		width: 100%;
+		height: 100px; 
+	}
+
+}
